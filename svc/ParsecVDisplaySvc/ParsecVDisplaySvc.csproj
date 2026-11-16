@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>ParsecVDisplaySvc</AssemblyName>
+    <RootNamespace>ParsecVDisplay.Svc</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Company>Parsec 虚拟显示器</Company>
+    <Product>Parsec 虚拟显示器服务</Product>
+    <FileDescription>Parsec 虚拟显示器常驻服务（开机即保持虚拟显示器）</FileDescription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\app\Device.cs" Link="Device.cs" />
+    <Reference Include="System.ServiceProcess" />
+  </ItemGroup>
+
+</Project>

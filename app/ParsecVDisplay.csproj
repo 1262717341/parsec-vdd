@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ParsecVDisplay</RootNamespace>
+    <AssemblyName>ParsecVDisplay</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\App.manifest</ApplicationManifest>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\admin.png" />
+    <None Remove="Resources\background.png" />
+    <None Remove="Resources\github.png" />
+    <None Remove="Resources\settings.png" />
+    <None Remove="Resources\sync.png" />
+    <None Remove="Resources\icon.ico" />
+
+    <Resource Include="Resources\admin.png" />
+    <Resource Include="Resources\background.png" />
+    <Resource Include="Resources\github.png" />
+    <Resource Include="Resources\settings.png" />
+    <Resource Include="Resources\sync.png" />
+    <Resource Include="Resources\icon.ico" />
+  </ItemGroup>
+
+</Project>

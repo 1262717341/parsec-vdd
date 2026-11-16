@@ -1,0 +1,28 @@
+# 编译产物
+bin/
+obj/
+*.pdb
+*.exe
+*.dll
+*.lnk
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+packages/
+
+# 打包相关：驱动包与生成的安装程序（安装包走 Releases）
+setup/parsec-vdd-setup.exe
+*.iss.bak
+Output/
+
+# 回退用的旧版二进制
+backup/
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
