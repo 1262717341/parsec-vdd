@@ -1,5 +1,7 @@
 # Parsec 虚拟显示器 · 简体中文版
 
+> **维护位置**：正式版本在 fork 仓库 **[1262717341/parsec-vdd](https://github.com/1262717341/parsec-vdd)**（GitHub 上显示为 *forked from nomi-san/parsec-vdd*）。本仓库为同名镜像，`main` 内容与 fork 保持一致。
+
 基于上游 [nomi-san/parsec-vdd](https://github.com/nomi-san/parsec-vdd) v0.45.1 的**汉化 + 功能改造**版本：中文界面与安装向导，修好开机自启，新增分辨率记忆，并把虚拟显示器的创建搬进常驻服务，解决串流玩家最痛的三个问题——串流软件启动时看不到虚拟屏、设备 ID 每次开机都变、开机黑一下。
 
 - 当前版本：**v0.46.9**（MIT License）
