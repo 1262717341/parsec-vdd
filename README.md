@@ -6,6 +6,8 @@
 - 平台：Windows 10 / 11 x64
 - 技术栈：C# / WPF（net48）+ 常驻 Windows 服务 + Inno Setup 安装包
 
+> **非官方项目**：本仓库是社区维护的第三方中文改造版，**未获上游作者 nomi-san 背书**，也与 Parsec Cloud, Inc. 无隶属关系（"Parsec" 为该公司商标，此处沿用上游对 Parsec Virtual Display Driver 的称呼）。第三方组件清单与许可原文见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
+
 ## 下载安装
 
 到 [Releases](https://github.com/1262717341/parsec-vdd-zh/releases/latest) 下载 `ParsecVDisplay-v0.46.9-setup.exe`（约 2.9 MB），安装向导为中文，默认勾选「开机自动启动」并注册后台服务 `ParsecVDisplaySvc`。
@@ -66,8 +68,10 @@ version.txt           下一次编译使用的版本号
 
 ## 许可与致谢
 
-- 本项目及其改动以 **MIT License** 发布，见 [LICENSE](LICENSE)；原始版权归 Nguyen Duy (2023)。
-- 上游：[nomi-san/parsec-vdd](https://github.com/nomi-san/parsec-vdd)（MIT）——驱动、`core` 头文件与整体思路来源。
-- 安装包使用 [Inno Setup](https://jrsoftware.org/isinfo.php)。
+- 本项目及其改动以 **MIT License** 发布，见 [LICENSE](LICENSE)；原始版权归 Nguyen Duy (2023)，MIT 要求保留该版权与许可声明，本仓库保持原文不变。
+- 上游：[nomi-san/parsec-vdd](https://github.com/nomi-san/parsec-vdd)（MIT）——驱动、`core` 头文件、宿主程序与整体思路来源；`app/`、`svc/` 均在其基础之上二次开发。
+- 安装包由 [Inno Setup](https://jrsoftware.org/isinfo.php) 生成；虚拟显示器驱动 `parsec-vdd-setup.exe` 为上游发行物，未随本仓库分发。
+
+> 完整第三方清单（组件、位置、许可、版权、上游链接）见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)，许可证原文在 `third_party/`。
 
 > 各版本的真实重启验证、日志片段与踩坑过程（含“改指定显示器必须用 `ChangeDisplaySettingsEx`”这一类教训）见 [docs/DEVLOG.md](docs/DEVLOG.md)。
